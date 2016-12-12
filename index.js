@@ -8,10 +8,11 @@ const colors = require('colors')
 
 const TARGETURL = 'http://yuchai.weilian.cn/shop/index.php';
 const cataInfoPath = path.join(__dirname,'codes/cataInfo.json')
-const subcataInfoPath = path.join(__dirname,'codes/subcataInfo.json')
+const subCateInfoPath = path.join(__dirname,'codes/subcataInfo.json')
 const goodsInfoPath = path.join(__dirname,'codes/goodsInfo.json')
 const codeInfoPath = path.join(__dirname,'codes/codeInfo.json')
 const imagePath = path.join(__dirname,'images')
+const tempPath = path.join(__dirname,'temp.txt')
 
 function getNow(format) {
 	let d = new Date()
@@ -79,19 +80,18 @@ function getSubCataInfo() {
 				let url = $(topLevel).find('h4 a').attr('href')
 				let name = $(topLevel).find('h4 a').text().trim()
 				let parentMenu = {id:parentId,url,name}
-
 				console.log(`获取主目录：${name}，目录ID：${parentId}，获取时间 ${getNow()}`)
-				let subMenus = []
+				let subCates = []
 				let subMenuColection = $(topLevel).find('.sub-class h3 a')
 					subMenuColection.each((idx, subMenu)=>{
 						let subUrl = $(subMenu).attr('href')
 						let subName = $(subMenu).text().trim()
 						let subId = subUrl.slice(subUrl.lastIndexOf('=')+1)
-						subMenus.push({id:subId,url:subUrl,name:subName})
+						subCates.push({id:subId,url:subUrl,name:subName})
 
 						console.log(`获取二级目录：${subName}，目录ID：${subId}，获取时间 ${getNow()}`)
 					})
-				parentMenu.subMenu = subMenus
+				parentMenu.subCates = subCates
 				menuList.push(parentMenu)
 			})
 			return writeFilePromise(subcataInfoPath, menuList)
@@ -113,7 +113,6 @@ function goodsFromSubcate(filePath) {
 	 * 
 	 *
 	 */
-	 return new Promise((resolve,reject)=>{
 	 	readFilePromise(filePath)
 		.then(parentColection => {
 			try{
@@ -121,42 +120,35 @@ function goodsFromSubcate(filePath) {
 			}catch(err){
 				throw new Error('parentColection can not be parse')
 			}
-			let allGoods = []
-			parentColection.forEach(parentCata => {
+			
+			parentColection.forEach(parentCate => {
 				let parentId = parentCate.id
-				let subCates = parentCate.subMenu
-				subCates.forEach(subCate=>{
-					let url = subCate.url
-					let subId = subCate.id
-					getDetailGoods(url)
-					.then(subCateGoods =>{
-						subCateGoods = subCateGoods.map(good=>{
-							good.subId = subId
-							good.parentId = parentId
+				let parentCateName = parentCate.name
+				let subCates = parentCate.subCates
+				let result =  (function () {
+					let subGoods = []
+					subCates.forEach(subCate=>{
+						let url = subCate.url
+						let subId = subCate.id
+						let name = subCate.name
+						getDetailGoods(url).then(goodsList=>{
+							let obj = {
+								cateId:subId,
+								cateName:name,
+								goods:goodsList,
+								parentCate:parentCateName
+							}
+							subGoods.push(obj)
 						})
-						allGoods = allGoods.concat(subCateGoods)
 					})
-				})
+					return subGoods
+				})()
+				console.log(result.length)
 			})
 		})
-	 })
-	
-}
-function goodsDetail(url,subId,parentId) {
-	return new Promise((resolve,reject)=>{
-		getDetailGoods(url)
-			.then(subCateGoods =>{
-				subCateGoods = subCateGoods.map(good=>{
-					good.subId = subId
-					good.parentId = parentId
-				})
-				resolve(subCateGoods)
-			})
-		.catch(err=>{reject(err)})
-	})
 }
 function getDetailGoods(url) {
-	return new Promise((resolve,reject)=>{
+	return new Promise((resolve, reject)=>{
 		fetchUrlByGET(url)
 		.then( body=> {
 			let goodsDetailColection = []
@@ -166,14 +158,25 @@ function getDetailGoods(url) {
 				let imgs = []
 				let imgswrapper = $(item).find('.goods-pic-scroll-show img')
 				for (let i = 0; i < imgswrapper.length; i++) {
-					imgs.push(imgswrapper[i].src)
+					imgs.push($(imgswrapper[i]).attr('src'))
 				}
 				let title = $(item).find('.goods-name a').text()
-				console.log(`获取商品：${title}，获取时间：${getNow()}`)
-				title = title.split(' ')
+				//console.log(`获取商品：${title}，获取时间：${getNow()}`)
+				title = title.split(' ');
+				
+				let goodCode;
+				if(title.length == 3){
+					goodCode = title[1].trim()
+				}else if(title.length>3){
+					let i=1;
+					while(title[i].trim().length == 0){
+						i++;
+					}
+					goodCode = title[i]
+				}
 				let obj = {
-					name:title[2],
-					code:title[1],
+					code:goodCode,
+					name:title[title.length-1],
 					brand:title[0],
 					imgs,
 				}
@@ -187,22 +190,21 @@ function getDetailGoods(url) {
 					goodsDetailColection.concat(getDetailGoods(url))
 				}
 			}
-			return Promise.resolve(goodsDetailColection)
+			resolve(goodsDetailColection)
 		})
-		.then(datas => resolve(datas))
 		.catch(err => {
 			reject(err)
 		})
 	})
+	
 }
-//getSubCataInfo()
+function tempDataToJson(path) {
+	let data = fs.readFileSync(path,'utf-8')
+	data = data.toString()
+	data = data.slice(0,data.length-1)
+	data = '['+data+']'
+	writeFilePromise(goodsInfoPath,data)
+}
 
-let test = 'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=169'
-getDetailGoods(test)
-	.then(content=>{
-		writeFilePromise('test.json',content)
-	})
-	.catch(err=>{
-		console.log(err)
-	})
-//goodsFromSubcate(subcataInfoPath)
+let testUrl = 'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=11'
+goodsFromSubcate(subCateInfoPath)

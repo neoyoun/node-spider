@@ -1,513 +1,859 @@
 [
-	{"id":"1",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=1",
-"name":"曲柄连杆机构",
-"subMenu":[
-	{"id":"169",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=169",
-"name":"再制造机体总成类"},
-{"id":"11",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=11",
-"name":"基础机类"},
-{"id":"12",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=12",
-"name":"再制造基础机类"},
-{"id":"13",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=13",
-"name":"精品组件类"},
-{"id":"14",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=14",
-"name":"机体类"},
-{"id":"15",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=15",
-"name":"气缸套类"},
-{"id":"16",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=16",
-"name":"缸套封水圈类"},
-{"id":"17",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=17",
-"name":"主轴承螺栓类"},
-{"id":"18",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=18",
-"name":"齿轮室类"},
-{"id":"19",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=19",
-"name":"齿轮室盖类"},
-{"id":"20",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=20",
-"name":"气缸盖类"},
-{"id":"21",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=21",
-"name":"气缸盖垫片类"},
-{"id":"22",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=22",
-"name":"缸盖螺栓类"},
-{"id":"23",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=23",
-"name":"缸盖罩类"},
-{"id":"24",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=24",
-"name":"缸盖罩垫片类"},
-{"id":"25",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=25",
-"name":"活塞类"},
-{"id":"26",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=26",
-"name":"活塞环类"},
-{"id":"27",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=27",
-"name":"活塞销类"},
-{"id":"28",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=28",
-"name":"连杆部件类"},
-{"id":"29",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=29",
-"name":"连杆瓦类"},
-{"id":"30",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=30",
-"name":"连杆衬套类"},
-{"id":"31",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=31",
-"name":"连杆螺栓类"},
-{"id":"32",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=32",
-"name":"曲轴类"},
-{"id":"33",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=33",
-"name":"曲轴瓦类"},
-{"id":"34",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=34",
-"name":"止推片类"},
-{"id":"35",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=35",
-"name":"正时齿轮类"},
-{"id":"36",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=36",
-"name":"皮带轮类"},
-{"id":"37",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=37",
-"name":"减振器类"}]},
-{"id":"2",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=2",
-"name":"配气机构",
-"subMenu":[
-	{"id":"38",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=38",
-"name":"凸轮轴类"},
-{"id":"39",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=39",
-"name":"凸轮轴衬套类"},
-{"id":"40",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=40",
-"name":"摇臂类"},
-{"id":"41",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=41",
-"name":"摇臂轴类"},
-{"id":"42",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=42",
-"name":"挺柱类"},
-{"id":"43",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=43",
-"name":"推杆类"},
-{"id":"44",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=44",
-"name":"气门类"},
-{"id":"45",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=45",
-"name":"气门锁夹类"},
-{"id":"46",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=46",
-"name":"气门座圈类"},
-{"id":"47",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=47",
-"name":"气门导管类"},
-{"id":"48",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=48",
-"name":"气门弹簧类"},
-{"id":"49",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=49",
-"name":"气门桥类"},
-{"id":"50",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=50",
-"name":"气门组合包类"},
-{"id":"51",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=51",
-"name":"挺杆室盖类"},
-{"id":"52",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=52",
-"name":"制动器类"}]},
-{"id":"3",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=3",
-"name":"进排气系统",
-"subMenu":[
-	{"id":"53",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=53",
-"name":"增压器类"},
-{"id":"54",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=54",
-"name":"空气滤清器类"},
-{"id":"55",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=55",
-"name":"空滤芯类"},
-{"id":"56",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=56",
-"name":"中冷器类"},
-{"id":"57",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=57",
-"name":"进气管类"},
-{"id":"58",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=58",
-"name":"排气管类"},
-{"id":"59",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=59",
-"name":"进排气管垫片类"},
-{"id":"60",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=60",
-"name":"消声器类"},
-{"id":"61",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=61",
-"name":"呼吸器类"},
-{"id":"62",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=62",
-"name":"油气分离器类"}]},
-{"id":"4",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=4",
-"name":"燃料供给系统",
-"subMenu":[
-	{"id":"64",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=64",
-"name":"柴油滤清器类"},
-{"id":"65",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=65",
-"name":"柴滤芯类"},
-{"id":"66",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=66",
-"name":"燃气滤清器类"},
-{"id":"67",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=67",
-"name":"燃气滤芯类"},
-{"id":"68",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=68",
-"name":"喷油泵类"},
-{"id":"69",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=69",
-"name":"输油泵类"},
-{"id":"70",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=70",
-"name":"提前器类"},
-{"id":"71",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=71",
-"name":"单体泵室类"},
-{"id":"72",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=72",
-"name":"联轴器类"},
-{"id":"73",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=73",
-"name":"燃气喷射部件类"},
-{"id":"74",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=74",
-"name":"稳压器类"},
-{"id":"75",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=75",
-"name":"减压器类"},
-{"id":"76",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=76",
-"name":"调压器类"},
-{"id":"77",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=77",
-"name":"混合器类"},
-{"id":"78",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=78",
-"name":"电子节气门类"},
-{"id":"79",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=79",
-"name":"喷油器类"},
-{"id":"80",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=80",
-"name":"油嘴偶件类"},
-{"id":"81",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=81",
-"name":"高压油管类"},
-{"id":"82",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=82",
-"name":"低压油管类"},
-{"id":"83",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=83",
-"name":"分配器类"},
-{"id":"84",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=84",
-"name":"控制器类"},
-{"id":"85",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=85",
-"name":"断油气缸类"},
-{"id":"86",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=86",
-"name":"电磁阀类"}]},
-{"id":"5",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=5",
-"name":"润滑系统",
-"subMenu":[
-	{"id":"87",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=87",
-"name":"机油滤清器类"},
-{"id":"88",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=88",
-"name":"机滤芯类"},
-{"id":"89",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=89",
-"name":"机油泵类"},
-{"id":"90",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=90",
-"name":"机油管类"},
-{"id":"91",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=91",
-"name":"油底壳类"},
-{"id":"92",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=92",
-"name":"油底壳垫片类"}]},
-{"id":"6",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=6",
-"name":"冷却系统",
-"subMenu":[
-	{"id":"93",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=93",
-"name":"水泵类"},
-{"id":"94",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=94",
-"name":"机油冷却器类"},
-{"id":"95",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=95",
-"name":"EGR冷却器类"},
-{"id":"96",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=96",
-"name":"调温器类"},
-{"id":"97",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=97",
-"name":"调温器盖类"},
-{"id":"98",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=98",
-"name":"调温器座类"},
-{"id":"99",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=99",
-"name":"风扇类"},
-{"id":"100",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=100",
-"name":"散热器类"},
-{"id":"101",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=101",
-"name":"水箱类"},
-{"id":"102",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=102",
-"name":"交换器类"},
-{"id":"103",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=103",
-"name":"水管类"}]},
-{"id":"7",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=7",
-"name":"起动系统",
-"subMenu":[
-	{"id":"104",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=104",
-"name":"离合器盖及压盘类"},
-{"id":"105",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=105",
-"name":"离合器从动盘类"},
-{"id":"106",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=106",
-"name":"起动机类"},
-{"id":"107",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=107",
-"name":"充电机类"},
-{"id":"108",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=108",
-"name":"调节器类"},
-{"id":"109",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=109",
-"name":"充电机支架类"},
-{"id":"110",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=110",
-"name":"调节板类"},
-{"id":"111",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=111",
-"name":"飞轮及齿圈组件类"},
-{"id":"112",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=112",
-"name":"飞轮类"},
-{"id":"113",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=113",
-"name":"齿圈类"},
-{"id":"114",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=114",
-"name":"飞轮壳类"},
-{"id":"115",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=115",
-"name":"继电器类"}]},
-{"id":"8",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=8",
-"name":"点火系统",
-"subMenu":[
-	{"id":"116",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=116",
-"name":"火花塞类"},
-{"id":"117",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=117",
-"name":"点火线圈类"}]},
-{"id":"9",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=9",
-"name":"后处理系统",
-"subMenu":[
-	{"id":"118",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=118",
-"name":"计量喷射泵类"},
-{"id":"119",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=119",
-"name":"催化器类"},
-{"id":"120",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=120",
-"name":"微粒捕集器类"},
-{"id":"121",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=121",
-"name":"添蓝罐类"}]},
-{"id":"10",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=10",
-"name":"其它",
-"subMenu":[
-	{"id":"122",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=122",
-"name":"转向泵类"},
-{"id":"123",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=123",
-"name":"空压机类"},
-{"id":"124",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=124",
-"name":"传感器类"},
-{"id":"125",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=125",
-"name":"线束类"},
-{"id":"126",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=126",
-"name":"信号盘类"},
-{"id":"127",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=127",
-"name":"皮带类"},
-{"id":"128",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=128",
-"name":"油封类"},
-{"id":"129",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=129",
-"name":"混合动力电机类"},
-{"id":"130",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=130",
-"name":"仪表类"},
-{"id":"131",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=131",
-"name":"垫块类"},
-{"id":"132",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=132",
-"name":"法兰类"},
-{"id":"133",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=133",
-"name":"接管类"},
-{"id":"134",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=134",
-"name":"接头类"},
-{"id":"135",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=135",
-"name":"接插件类"},
-{"id":"136",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=136",
-"name":"托架类"},
-{"id":"137",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=137",
-"name":"全车垫类"},
-{"id":"138",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=138",
-"name":"维修包类"},
-{"id":"139",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=139",
-"name":"标准件类"},
-{"id":"140",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=140",
-"name":"非国标其它件类"},
-{"id":"141",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=141",
-"name":"软垫类"},
-{"id":"142",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=142",
-"name":"PTO组件类"},
-{"id":"143",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=143",
-"name":"其它齿轮类"},
-{"id":"144",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=144",
-"name":"其它垫片类"},
-{"id":"145",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=145",
-"name":"其它轴类"},
-{"id":"146",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=146",
-"name":"其它板类"},
-{"id":"147",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=147",
-"name":"其它阀类"},
-{"id":"148",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=148",
-"name":"其它盖类"},
-{"id":"149",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=149",
-"name":"其它管类"},
-{"id":"150",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=150",
-"name":"其它套类"},
-{"id":"151",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=151",
-"name":"其它罩类"},
-{"id":"152",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=152",
-"name":"其它支架类"},
-{"id":"153",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=153",
-"name":"其它座类"},
-{"id":"154",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=154",
-"name":"二次配套件类"},
-{"id":"170",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=170",
-"name":"诊断仪"}]},
-{"id":"155",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=155",
-"name":"油品类",
-"subMenu":[
-	{"id":"156",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=156",
-"name":"柴机油"},
-{"id":"157",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=157",
-"name":"气体机油"},
-{"id":"158",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=158",
-"name":"船机油"},
-{"id":"160",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=160",
-"name":"防冻液"},
-{"id":"161",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=161",
-"name":"齿轮油"},
-{"id":"162",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=162",
-"name":"农业装备油"},
-{"id":"164",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=164",
-"name":"润滑脂"},
-{"id":"165",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=165",
-"name":"添蓝尿素"},
-{"id":"166",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=166",
-"name":"液力传动油"},
-{"id":"167",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=167",
-"name":"液压油"},
-{"id":"168",
-	"url":"http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=168",
-"name":"制动液"}]}]
+    {
+        "id": "1",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=1",
+        "name": "曲柄连杆机构",
+        "subCates": [
+            {
+                "id": "169",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=169",
+                "name": "再制造机体总成类"
+            },
+            {
+                "id": "11",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=11",
+                "name": "基础机类"
+            },
+            {
+                "id": "12",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=12",
+                "name": "再制造基础机类"
+            },
+            {
+                "id": "13",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=13",
+                "name": "精品组件类"
+            },
+            {
+                "id": "14",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=14",
+                "name": "机体类"
+            },
+            {
+                "id": "15",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=15",
+                "name": "气缸套类"
+            },
+            {
+                "id": "16",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=16",
+                "name": "缸套封水圈类"
+            },
+            {
+                "id": "17",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=17",
+                "name": "主轴承螺栓类"
+            },
+            {
+                "id": "18",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=18",
+                "name": "齿轮室类"
+            },
+            {
+                "id": "19",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=19",
+                "name": "齿轮室盖类"
+            },
+            {
+                "id": "20",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=20",
+                "name": "气缸盖类"
+            },
+            {
+                "id": "21",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=21",
+                "name": "气缸盖垫片类"
+            },
+            {
+                "id": "22",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=22",
+                "name": "缸盖螺栓类"
+            },
+            {
+                "id": "23",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=23",
+                "name": "缸盖罩类"
+            },
+            {
+                "id": "24",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=24",
+                "name": "缸盖罩垫片类"
+            },
+            {
+                "id": "25",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=25",
+                "name": "活塞类"
+            },
+            {
+                "id": "26",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=26",
+                "name": "活塞环类"
+            },
+            {
+                "id": "27",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=27",
+                "name": "活塞销类"
+            },
+            {
+                "id": "28",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=28",
+                "name": "连杆部件类"
+            },
+            {
+                "id": "29",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=29",
+                "name": "连杆瓦类"
+            },
+            {
+                "id": "30",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=30",
+                "name": "连杆衬套类"
+            },
+            {
+                "id": "31",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=31",
+                "name": "连杆螺栓类"
+            },
+            {
+                "id": "32",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=32",
+                "name": "曲轴类"
+            },
+            {
+                "id": "33",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=33",
+                "name": "曲轴瓦类"
+            },
+            {
+                "id": "34",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=34",
+                "name": "止推片类"
+            },
+            {
+                "id": "35",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=35",
+                "name": "正时齿轮类"
+            },
+            {
+                "id": "36",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=36",
+                "name": "皮带轮类"
+            },
+            {
+                "id": "37",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=37",
+                "name": "减振器类"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=2",
+        "name": "配气机构",
+        "subCates": [
+            {
+                "id": "38",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=38",
+                "name": "凸轮轴类"
+            },
+            {
+                "id": "39",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=39",
+                "name": "凸轮轴衬套类"
+            },
+            {
+                "id": "40",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=40",
+                "name": "摇臂类"
+            },
+            {
+                "id": "41",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=41",
+                "name": "摇臂轴类"
+            },
+            {
+                "id": "42",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=42",
+                "name": "挺柱类"
+            },
+            {
+                "id": "43",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=43",
+                "name": "推杆类"
+            },
+            {
+                "id": "44",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=44",
+                "name": "气门类"
+            },
+            {
+                "id": "45",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=45",
+                "name": "气门锁夹类"
+            },
+            {
+                "id": "46",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=46",
+                "name": "气门座圈类"
+            },
+            {
+                "id": "47",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=47",
+                "name": "气门导管类"
+            },
+            {
+                "id": "48",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=48",
+                "name": "气门弹簧类"
+            },
+            {
+                "id": "49",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=49",
+                "name": "气门桥类"
+            },
+            {
+                "id": "50",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=50",
+                "name": "气门组合包类"
+            },
+            {
+                "id": "51",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=51",
+                "name": "挺杆室盖类"
+            },
+            {
+                "id": "52",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=52",
+                "name": "制动器类"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=3",
+        "name": "进排气系统",
+        "subCates": [
+            {
+                "id": "53",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=53",
+                "name": "增压器类"
+            },
+            {
+                "id": "54",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=54",
+                "name": "空气滤清器类"
+            },
+            {
+                "id": "55",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=55",
+                "name": "空滤芯类"
+            },
+            {
+                "id": "56",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=56",
+                "name": "中冷器类"
+            },
+            {
+                "id": "57",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=57",
+                "name": "进气管类"
+            },
+            {
+                "id": "58",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=58",
+                "name": "排气管类"
+            },
+            {
+                "id": "59",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=59",
+                "name": "进排气管垫片类"
+            },
+            {
+                "id": "60",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=60",
+                "name": "消声器类"
+            },
+            {
+                "id": "61",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=61",
+                "name": "呼吸器类"
+            },
+            {
+                "id": "62",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=62",
+                "name": "油气分离器类"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=4",
+        "name": "燃料供给系统",
+        "subCates": [
+            {
+                "id": "64",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=64",
+                "name": "柴油滤清器类"
+            },
+            {
+                "id": "65",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=65",
+                "name": "柴滤芯类"
+            },
+            {
+                "id": "66",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=66",
+                "name": "燃气滤清器类"
+            },
+            {
+                "id": "67",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=67",
+                "name": "燃气滤芯类"
+            },
+            {
+                "id": "68",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=68",
+                "name": "喷油泵类"
+            },
+            {
+                "id": "69",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=69",
+                "name": "输油泵类"
+            },
+            {
+                "id": "70",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=70",
+                "name": "提前器类"
+            },
+            {
+                "id": "71",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=71",
+                "name": "单体泵室类"
+            },
+            {
+                "id": "72",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=72",
+                "name": "联轴器类"
+            },
+            {
+                "id": "73",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=73",
+                "name": "燃气喷射部件类"
+            },
+            {
+                "id": "74",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=74",
+                "name": "稳压器类"
+            },
+            {
+                "id": "75",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=75",
+                "name": "减压器类"
+            },
+            {
+                "id": "76",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=76",
+                "name": "调压器类"
+            },
+            {
+                "id": "77",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=77",
+                "name": "混合器类"
+            },
+            {
+                "id": "78",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=78",
+                "name": "电子节气门类"
+            },
+            {
+                "id": "79",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=79",
+                "name": "喷油器类"
+            },
+            {
+                "id": "80",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=80",
+                "name": "油嘴偶件类"
+            },
+            {
+                "id": "81",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=81",
+                "name": "高压油管类"
+            },
+            {
+                "id": "82",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=82",
+                "name": "低压油管类"
+            },
+            {
+                "id": "83",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=83",
+                "name": "分配器类"
+            },
+            {
+                "id": "84",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=84",
+                "name": "控制器类"
+            },
+            {
+                "id": "85",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=85",
+                "name": "断油气缸类"
+            },
+            {
+                "id": "86",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=86",
+                "name": "电磁阀类"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=5",
+        "name": "润滑系统",
+        "subCates": [
+            {
+                "id": "87",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=87",
+                "name": "机油滤清器类"
+            },
+            {
+                "id": "88",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=88",
+                "name": "机滤芯类"
+            },
+            {
+                "id": "89",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=89",
+                "name": "机油泵类"
+            },
+            {
+                "id": "90",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=90",
+                "name": "机油管类"
+            },
+            {
+                "id": "91",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=91",
+                "name": "油底壳类"
+            },
+            {
+                "id": "92",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=92",
+                "name": "油底壳垫片类"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=6",
+        "name": "冷却系统",
+        "subCates": [
+            {
+                "id": "93",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=93",
+                "name": "水泵类"
+            },
+            {
+                "id": "94",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=94",
+                "name": "机油冷却器类"
+            },
+            {
+                "id": "95",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=95",
+                "name": "EGR冷却器类"
+            },
+            {
+                "id": "96",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=96",
+                "name": "调温器类"
+            },
+            {
+                "id": "97",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=97",
+                "name": "调温器盖类"
+            },
+            {
+                "id": "98",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=98",
+                "name": "调温器座类"
+            },
+            {
+                "id": "99",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=99",
+                "name": "风扇类"
+            },
+            {
+                "id": "100",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=100",
+                "name": "散热器类"
+            },
+            {
+                "id": "101",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=101",
+                "name": "水箱类"
+            },
+            {
+                "id": "102",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=102",
+                "name": "交换器类"
+            },
+            {
+                "id": "103",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=103",
+                "name": "水管类"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=7",
+        "name": "起动系统",
+        "subCates": [
+            {
+                "id": "104",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=104",
+                "name": "离合器盖及压盘类"
+            },
+            {
+                "id": "105",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=105",
+                "name": "离合器从动盘类"
+            },
+            {
+                "id": "106",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=106",
+                "name": "起动机类"
+            },
+            {
+                "id": "107",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=107",
+                "name": "充电机类"
+            },
+            {
+                "id": "108",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=108",
+                "name": "调节器类"
+            },
+            {
+                "id": "109",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=109",
+                "name": "充电机支架类"
+            },
+            {
+                "id": "110",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=110",
+                "name": "调节板类"
+            },
+            {
+                "id": "111",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=111",
+                "name": "飞轮及齿圈组件类"
+            },
+            {
+                "id": "112",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=112",
+                "name": "飞轮类"
+            },
+            {
+                "id": "113",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=113",
+                "name": "齿圈类"
+            },
+            {
+                "id": "114",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=114",
+                "name": "飞轮壳类"
+            },
+            {
+                "id": "115",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=115",
+                "name": "继电器类"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=8",
+        "name": "点火系统",
+        "subCates": [
+            {
+                "id": "116",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=116",
+                "name": "火花塞类"
+            },
+            {
+                "id": "117",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=117",
+                "name": "点火线圈类"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=9",
+        "name": "后处理系统",
+        "subCates": [
+            {
+                "id": "118",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=118",
+                "name": "计量喷射泵类"
+            },
+            {
+                "id": "119",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=119",
+                "name": "催化器类"
+            },
+            {
+                "id": "120",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=120",
+                "name": "微粒捕集器类"
+            },
+            {
+                "id": "121",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=121",
+                "name": "添蓝罐类"
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=10",
+        "name": "其它",
+        "subCates": [
+            {
+                "id": "122",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=122",
+                "name": "转向泵类"
+            },
+            {
+                "id": "123",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=123",
+                "name": "空压机类"
+            },
+            {
+                "id": "124",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=124",
+                "name": "传感器类"
+            },
+            {
+                "id": "125",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=125",
+                "name": "线束类"
+            },
+            {
+                "id": "126",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=126",
+                "name": "信号盘类"
+            },
+            {
+                "id": "127",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=127",
+                "name": "皮带类"
+            },
+            {
+                "id": "128",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=128",
+                "name": "油封类"
+            },
+            {
+                "id": "129",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=129",
+                "name": "混合动力电机类"
+            },
+            {
+                "id": "130",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=130",
+                "name": "仪表类"
+            },
+            {
+                "id": "131",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=131",
+                "name": "垫块类"
+            },
+            {
+                "id": "132",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=132",
+                "name": "法兰类"
+            },
+            {
+                "id": "133",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=133",
+                "name": "接管类"
+            },
+            {
+                "id": "134",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=134",
+                "name": "接头类"
+            },
+            {
+                "id": "135",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=135",
+                "name": "接插件类"
+            },
+            {
+                "id": "136",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=136",
+                "name": "托架类"
+            },
+            {
+                "id": "137",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=137",
+                "name": "全车垫类"
+            },
+            {
+                "id": "138",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=138",
+                "name": "维修包类"
+            },
+            {
+                "id": "139",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=139",
+                "name": "标准件类"
+            },
+            {
+                "id": "140",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=140",
+                "name": "非国标其它件类"
+            },
+            {
+                "id": "141",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=141",
+                "name": "软垫类"
+            },
+            {
+                "id": "142",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=142",
+                "name": "PTO组件类"
+            },
+            {
+                "id": "143",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=143",
+                "name": "其它齿轮类"
+            },
+            {
+                "id": "144",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=144",
+                "name": "其它垫片类"
+            },
+            {
+                "id": "145",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=145",
+                "name": "其它轴类"
+            },
+            {
+                "id": "146",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=146",
+                "name": "其它板类"
+            },
+            {
+                "id": "147",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=147",
+                "name": "其它阀类"
+            },
+            {
+                "id": "148",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=148",
+                "name": "其它盖类"
+            },
+            {
+                "id": "149",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=149",
+                "name": "其它管类"
+            },
+            {
+                "id": "150",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=150",
+                "name": "其它套类"
+            },
+            {
+                "id": "151",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=151",
+                "name": "其它罩类"
+            },
+            {
+                "id": "152",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=152",
+                "name": "其它支架类"
+            },
+            {
+                "id": "153",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=153",
+                "name": "其它座类"
+            },
+            {
+                "id": "154",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=154",
+                "name": "二次配套件类"
+            },
+            {
+                "id": "170",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=170",
+                "name": "诊断仪"
+            }
+        ]
+    },
+    {
+        "id": "155",
+        "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=155",
+        "name": "油品类",
+        "subCates": [
+            {
+                "id": "156",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=156",
+                "name": "柴机油"
+            },
+            {
+                "id": "157",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=157",
+                "name": "气体机油"
+            },
+            {
+                "id": "158",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=158",
+                "name": "船机油"
+            },
+            {
+                "id": "160",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=160",
+                "name": "防冻液"
+            },
+            {
+                "id": "161",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=161",
+                "name": "齿轮油"
+            },
+            {
+                "id": "162",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=162",
+                "name": "农业装备油"
+            },
+            {
+                "id": "164",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=164",
+                "name": "润滑脂"
+            },
+            {
+                "id": "165",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=165",
+                "name": "添蓝尿素"
+            },
+            {
+                "id": "166",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=166",
+                "name": "液力传动油"
+            },
+            {
+                "id": "167",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=167",
+                "name": "液压油"
+            },
+            {
+                "id": "168",
+                "url": "http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=168",
+                "name": "制动液"
+            }
+        ]
+    }
+]
