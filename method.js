@@ -2,7 +2,7 @@ const fs = require('fs')
 const request = require('request')
 
 const method = {
-	fetchUrlByGET: function (argument) {
+	fetchUrlByGET: function (url) {
 		return new Promise((resolve,reject)=>{
 			request({url:url,method:'GET'},function (err,res,body) {
 				if(!err){

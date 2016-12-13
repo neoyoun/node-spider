@@ -110,9 +110,8 @@ function goodsFromSubcate(filePath) {
 	 	subId:subId, *二级目录 ID
 	 	parentId:parentId  *主目录 ID
 	  }
-	 * 
-	 *
 	 */
+	 return new Promise((resolve, reject)=>{
 	 	readFilePromise(filePath)
 		.then(parentColection => {
 			try{
@@ -120,36 +119,52 @@ function goodsFromSubcate(filePath) {
 			}catch(err){
 				throw new Error('parentColection can not be parse')
 			}
-			
+			let subGoods = []
 			parentColection.forEach(parentCate => {
 				let parentId = parentCate.id
 				let parentCateName = parentCate.name
 				let subCates = parentCate.subCates
-				let result =  (function () {
-					let subGoods = []
-					subCates.forEach(subCate=>{
-						let url = subCate.url
-						let subId = subCate.id
-						let name = subCate.name
-						getDetailGoods(url).then(goodsList=>{
-							let obj = {
-								cateId:subId,
-								cateName:name,
-								goods:goodsList,
-								parentCate:parentCateName
-							}
-							subGoods.push(obj)
-						})
-					})
-					return subGoods
-				})()
-				console.log(result.length)
+				subCates.forEach(subCate=>{
+					let url = subCate.url
+					let subId = subCate.id
+					let name = subCate.name
+					subGoods.push(getDetailGoods(url).then(goodList=>{
+						let obj = {
+							id:subId,
+							name:name,
+							goods:goodList,
+							parent:parentCateName
+						}
+						return Promise.resolve(obj)
+					})) 
+				})
 			})
+			return Promise.all(subGoods)
 		})
+		.then(subGoods=>{
+			console.log('一共加载了 ',subGoods.length,' 条数据')
+			resolve(subGoods)
+		})
+		.catch(err=>{
+			reject(err)
+		})
+	 })	
 }
+
 function getDetailGoods(url) {
-	return new Promise((resolve, reject)=>{
-		fetchUrlByGET(url)
+	/*
+	 * @return  array 返回子目录的所有商品
+	 *	[{
+	 code:goodCode,
+	 name:配件名字,
+	 brand:品牌,
+	 imgs:[] 图片列表
+	 },
+	 {}]
+	 *
+	 */
+ return new Promise((resolve, reject)=>{
+ 	fetchUrlByGET(url)
 		.then( body=> {
 			let goodsDetailColection = []
 			let $ = cheerio.load(body);
@@ -195,8 +210,7 @@ function getDetailGoods(url) {
 		.catch(err => {
 			reject(err)
 		})
-	})
-	
+ })	
 }
 function tempDataToJson(path) {
 	let data = fs.readFileSync(path,'utf-8')
@@ -205,6 +219,25 @@ function tempDataToJson(path) {
 	data = '['+data+']'
 	writeFilePromise(goodsInfoPath,data)
 }
+let testUrl = ['http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=11','http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=12','http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=13']
+let testUrl2 = 'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=1';
+/*getDetailGoods(testUrl2)
+.then(goods=>{
+	console.log(goods.length)
+})*/
 
-let testUrl = 'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=11'
-goodsFromSubcate(subCateInfoPath)
+
+function main() {
+	let arr = []
+	testUrl.forEach((url, idx)=>{
+		arr.push(getDetailGoods(url).then(goods=>{
+			let obj = {
+				name:'name_'+idx,
+				id:idx+1,
+				goods:goods
+			}
+			return Promise.resolve(obj)
+		}))
+	})
+	return Promise.all(arr)
+}
