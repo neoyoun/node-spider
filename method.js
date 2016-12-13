@@ -31,13 +31,20 @@ const method = {
 			});
 		})
 	},
-	readFilePromise(path) {
+	readFilePromise: function(path) {
 		return new Promise((resolve,reject)=>{
 			fs.readFile(path, 'utf8', (err,data)=>{
 				if(!err){resolve(data)}
 					else {reject(err)}
 			});
 		})
+	},
+	getNow: function() {
+		let d = new Date()
+		let H = d.getHours()
+		let m = d.getMinutes()
+		let s = d.getSeconds()
+		return `${H<10?'0'+H:H}:${m<10?'0'+m:m}:${s<10?'0'+s:s}`;
 	}
 
 }
