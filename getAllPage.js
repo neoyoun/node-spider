@@ -1,13 +1,15 @@
 const {fetchUrlByGET,getNow} = require('./method')
 const cheerio = require('cheerio')
 const request = require('request')
-const cateUrl = 'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=1';
+const cateUrl = 'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=12';
 
 //let arr = [fetchGoodList(cateUrl1),fetchGoodList(cateUrl2),fetchGoodList(cateUrl3)]
 function fetchGoodList(cateUrl) {
 	let urlList = []
-	let result = forEachPage(cateUrl)
+	let pageIdx = 0;
 	function forEachPage(cateUrl) {
+			pageIdx++;
+			console.log('正在请求第'+pageIdx+'页')
 				request({url:cateUrl},function (err, res, body) {
 					if(!err){
 						let $ = cheerio.load(body)
@@ -21,12 +23,11 @@ function fetchGoodList(cateUrl) {
 								forEachPage(nextPageUrl)
 							}
 						}else{
-							console.log(urlList)
-							return urlList
 						}
 					}
 				})
 			}
-	console.log(result)
+	return Promise.all(urlList)
+	
 }
-fetchGoodList(cateUrl)
+fetchGoodList(cateUrl).then(data=>console.dir(data))
