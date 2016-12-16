@@ -3,11 +3,11 @@ const cheerio = require('cheerio')
 const request = require('request')
 const colors = require('colors')
 const path = require('path')
-const cateUrl = 'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=1';
 const targetPath = path.join(__dirname,'./twopage.json')
 //let arr = [fetchGoodList(cateUrl1),fetchGoodList(cateUrl2),fetchGoodList(cateUrl3)]
 let pageArr = ['http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=2','http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=2&curpage=2']
 
+let cateUrls = [{id:156,url:'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=156'},{id:157,url:'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=157'},{id:158,url:'http://yuchai.weilian.cn/shop/index.php?act=search&op=index&cate_id=158'}]
 function getAllPage(firstPage) {
 	/*
 	 * @param 分页中的第一页
@@ -43,17 +43,56 @@ function getAllPage(firstPage) {
 	 	}(firstPage)
 	 })
 }
-getAllPage(cateUrl)
+Promise.all(cateUrls.map(obj=>{
+	return Promise.resolve(fetchPages(obj.url)).then(goods=>{
+		let newobj = {
+			id:obj.id,
+			goods:goods
+		}
+		return newobj
+	})
+})).then(results=>{
+	console.log('results')
+	writeFilePromise(targetPath,results)
+})
+
+function fetchPages(url) {
+	/*
+	 * 遍历单个 url 地址(也是分页中的第一页)返回结果
+	 *
+	 */
+return goodsCollection = getAllPage(url)
 	.then(pages=>{
 		console.log(`正在抓取内容，一共有${pages.length}页`)
-		return Promise.resolve(fetAllPage(pages))
+		return fetchAllPage(pages)
 	})
-	.then(result=>{
-		console.log('全部写完啦')
+	.then(goodsCollection=>{
+		return Promise.resolve(goodsCollection)
 	})
 	.catch(err=>{
 		throw err
 	})
+}
+function fetchAllPage(pageArr) {
+	/* 根据传入的页码数组同时抓取数据
+	 * 单个页面返回的是一个产品数组
+	 * 所有页面返回的是一个二维数组，其中每一项就是单页的数组
+	 * 使用 reduce 方法将数组展开为一维数组，返回
+	 */
+return new Promise(resolve=>{
+	Promise.all(pageArr.map(url=>{
+		return fetchGoodsByPage(url)
+	})).then(goodsCollection=>{
+		let finalArray = goodsCollection.reduce((prevPage,nextPage)=>{
+			return prevPage.concat(nextPage)
+		})
+		return Promise.resolve(finalArray)
+		
+	}).then(finalArray=>{
+		resolve(finalArray)
+	})
+})
+}
 
 function fetchGoodsByPage(url) {
 	/*
@@ -102,22 +141,6 @@ function fetchGoodsByPage(url) {
 	})
 }
 
-function fetAllPage(pageArr) {
-	/* 根据传入的页码数组同时抓取数据
-	 * 单个页面返回的是一个产品数组
-	 * 所有页面返回的是一个二维数组，其中每一项就是单页的数组
-	 * 使用 reduce 方法将数组展开为一维数组，返回
-	 */
-
-	Promise.all(pageArr.map(url=>{
-		return fetchGoodsByPage(url)
-	})).then(goodsCollection=>{
-		let finalArray = goodsCollection.reduce((prevPage,nextPage)=>{
-			return prevPage.concat(nextPage)
-		})
-		writeFilePromise(targetPath,JSON.stringify(finalArray,null,4))
-	})	
-}
 
 
 
