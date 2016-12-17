@@ -6,86 +6,104 @@ const colors = require('colors')
 
 
 const dataPath = path.join(__dirname, 'codes/goodsInfo.json')
-
-
+const ImgRootPath = path.join(__dirname,'./images/')
 method.readFilePromise(dataPath)
 	.then(data=>{
-		return Promise.resolve(JSON.parse(data))
-	})
-	.then(data=>{
-		let allImgLen = 0;
-		let codeHaveImg = 0;
-		data.forEach((item, idx)=>{
-			let parentCateDir =path.join(__dirname,`./images/${item.parentName}`)
-			let cateDir = path.join(__dirname,`./images/${item.parentName}/${item.name}`)
+		/*
+		 * 创建目录
+		 * @return []
+		 *
+		 */
+		data = JSON.parse(data)
+		let categoods = data.map(subCate=>{
+			let goods = subCate.goods
+			let cateName = subCate.name
+			let parentCate = subCate.parentName
+			let parentPath = ImgRootPath + parentCate+'/'
+			let catePath = parentPath+cateName+'/'
 			
-			if (!fs.existsSync(parentCateDir)) {
-		         fs.mkdirSync(parentCateDir);
-		     }
-		     if(!fs.existsSync(cateDir)){
-		         	fs.mkdirSync(cateDir);
-		         	console.log(`${item.name} 目录已创建`);
-		         } 
-		  let goods = item.goods
-		    let cate = item.name
-		    goods.forEach( good =>{
-		    	let imgList = good.imgs;
-			    if(imgList.length>0){
-			    	let code = good.code;
-			    	let name = good.name;
-			    	codeHaveImg++
-			    	for(let i=0;i<imgList.length;i++){
-			    		let imgUrl = imgList[i];
-			    		let postFix = imgUrl.slice(imgUrl.lastIndexOf('.'))
-			    		let fileName = code+'_0'+i+postFix;
-			    		downLoadImg(imgUrl, cateDir, fileName)
-			    		allImgLen++;
-			    	//console.log(`已下载 ${name}(${code}) 的第 ${i+1} 张图片。-->${cate}`)
-			    	}
-			    }
-		    })
-		    
-			
+			if(!fs.existsSync(catePath)){
+				if(!fs.existsSync(parentPath)){
+					fs.mkdirSync(parentPath, 777)
+					console.log(`主目录 ${parentCate} 已创建`)
+				}
+				fs.mkdirSync(catePath, 777);
+				console.log(`二级目录 ${cateName}（${parentCate}） 已创建`)
+			}
+			return {
+				catePath,
+				goods
+			}
 		})
-		//console.log(`一共有${codeHaveImg}条代码有图片,共计 ${allImgLen} 张`)
+		return Promise.all(categoods)
 	})
-	.catch(err => {
+	.then(categoods=>{
+		return Promise.all(categoods.map(categood=>{
+			/*
+			 * return {catepath:catepage,imgs[{imgs1},{imgs2},{imgs3}]}
+			 *
+			 */
+			let goods = categood.goods
+			let imgsCollection = []
+			goods.forEach(good=>{
+				let imgs = good.imgs
+				let code = good.code
+				let imgsCount = imgs.length;
+				if(imgsCount !== 0){
+					for(let i=0;i<imgsCount;i++){
+						let postFix = imgs[i].slice(imgs[i].lastIndexOf('.'))
+						imgsCollection.push({
+							filename:code+'_0'+i+postFix,
+							src:imgs[i]
+						})
+					}
+				}
+			})
+			return {catePath:categood.catePath,imgs:imgsCollection}
+		}))
+	})
+	.then(catesWithImg=>{
+		let filterNoImgCate = catesWithImg.filter(cateWithImg=>{
+			return cateWithImg.imgs.length != 0
+		})
+		let imgsCollection = []
+		filterNoImgCate.forEach(imgCate=>{
+			let dir = imgCate.catePath
+			let imgs = imgCate.imgs
+			imgs.forEach(img=>{
+				let filename = img.filename
+				let src = img.src
+				imgsCollection.push({dir,filename,src})
+			})
+		})
+		return Promise.all(imgsCollection)
+	})
+	.then(imgsCollection=>{
+		for(let i=0;i<5;i++){
+			downLoadImg(imgsCollection[i].src,imgsCollection[i].dir,imgsCollection[i].filename)
+		}
+	})
+	.catch(err=>{
+		console.error('catch error from read file'.red)
 		throw err
 	})
 
-function startDownLoad(url, dir, fileName) {
-	let savePath = dir+'/'+fileName;
-	if(savePath <5 ){
-		throw new Error('文件名出错 ',fileName)
-	}
-	if(!fs.existsSync(savePath)){
 
-	}
-	let writeStream = fs.createWriteStream(savePath)
-	request.head(url, function (err, res, body) {
-		if(err){
-			console.error('请求文件失败'.red)
-			throw new Error(err)
-		}
-		console.log(('正在下载...'+fileName))
-		request(url).pipe(writeStream)
-		console.log((fileName+'下载完成!').green)
+function downLoadImg(src, dir, filename) {
+	return new Promise((resolve,reject)=>{
+		let savePath = dir+filename.replace('*','')
+		request.head(src, (err, res, body)=>{
+			if(err){
+				reject(err)
+			} else {
+				console.log('开始下载图片'+filename)
+				request(src).pipe(fs.createWriteStream(path.resolve(savePath))).on('close',()=>{
+					console.log((filename+' 下载完成').green)
+					resolve()
+				})
+			}
+			
+		})
 	})
-}
-
-function downLoadImg(src,dir,fileName) {
-	let savePath = dir+'/'+fileName;
-	if(savePath <5 ){
-		throw new Error('文件名出错 ',fileName)
-	}
 	
-	let writeStream = fs.createWriteStream(savePath)
-	request.head(src,(err,res,body)=>{
-		if(src){
-			console.log(('正在下载...'+fileName))
-			request(src).pipe(writeStream).on('close',data=>{
-				console.log((fileName+'下载完成!').green)
-			})
-		}
-	})
 }
