@@ -26,7 +26,7 @@ const method = {
 					reject(err)
 				}else{
 					console.log('写完了。',path.blue)
-					resolve()
+					resolve(jsonStr)
 				}
 			});
 		})

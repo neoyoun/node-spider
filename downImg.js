@@ -5,105 +5,85 @@ const request = require('request')
 const colors = require('colors')
 
 
-const dataPath = path.join(__dirname, 'codes/goodsInfo.json')
+const dataSource = path.join(__dirname, 'codes/goodsInfo.json')
+const imgSourcePath = path.join(__dirname, 'codes/imgsInfo.json')
 const ImgRootPath = path.join(__dirname,'./images/')
-method.readFilePromise(dataPath)
+
+function saveImgsInfo() {
+	return method.readFilePromise(dataSource)
 	.then(data=>{
-		/*
-		 * 创建目录
-		 * @return []
-		 *
-		 */
 		data = JSON.parse(data)
-		let categoods = data.map(subCate=>{
-			let goods = subCate.goods
-			let cateName = subCate.name
-			let parentCate = subCate.parentName
-			let parentPath = ImgRootPath + parentCate+'/'
-			let catePath = parentPath+cateName+'/'
-			
-			if(!fs.existsSync(catePath)){
-				if(!fs.existsSync(parentPath)){
-					fs.mkdirSync(parentPath, 777)
-					console.log(`主目录 ${parentCate} 已创建`)
-				}
-				fs.mkdirSync(catePath, 777);
-				console.log(`二级目录 ${cateName}（${parentCate}） 已创建`)
-			}
-			return {
-				catePath,
-				goods
-			}
-		})
-		return Promise.all(categoods)
-	})
-	.then(categoods=>{
-		return Promise.all(categoods.map(categood=>{
-			/*
-			 * return {catepath:catepage,imgs[{imgs1},{imgs2},{imgs3}]}
-			 *
-			 */
-			let goods = categood.goods
-			let imgsCollection = []
+		let imgsCollection = []
+		data.forEach(subcate=>{
+			let goods = subcate.goods
 			goods.forEach(good=>{
 				let imgs = good.imgs
-				let code = good.code
-				let imgsCount = imgs.length;
-				if(imgsCount !== 0){
-					for(let i=0;i<imgsCount;i++){
+				if(imgs.length > 0){
+					let code = good.code
+					for(let i=0;i<imgs.length;i++){
 						let postFix = imgs[i].slice(imgs[i].lastIndexOf('.'))
-						imgsCollection.push({
-							filename:code+'_0'+i+postFix,
+						let filename = code+'_0'+i+postFix
+						imgsCollection.push(Promise.resolve({
+							filename,
 							src:imgs[i]
-						})
+						}))
 					}
 				}
-			})
-			return {catePath:categood.catePath,imgs:imgsCollection}
-		}))
-	})
-	.then(catesWithImg=>{
-		let filterNoImgCate = catesWithImg.filter(cateWithImg=>{
-			return cateWithImg.imgs.length != 0
-		})
-		let imgsCollection = []
-		filterNoImgCate.forEach(imgCate=>{
-			let dir = imgCate.catePath
-			let imgs = imgCate.imgs
-			imgs.forEach(img=>{
-				let filename = img.filename
-				let src = img.src
-				imgsCollection.push({dir,filename,src})
 			})
 		})
 		return Promise.all(imgsCollection)
 	})
 	.then(imgsCollection=>{
-		for(let i=0;i<5;i++){
-			downLoadImg(imgsCollection[i].src,imgsCollection[i].dir,imgsCollection[i].filename)
-		}
+		//if(fs.existsSync(imgSourcePath)) return;
+		return method.writeFilePromise(imgSourcePath, imgsCollection)
 	})
-	.catch(err=>{
-		console.error('catch error from read file'.red)
-		throw err
+}
+saveImgsInfo()
+	.then(data=>{
+		console.log(data.slice(0,10))
 	})
-
-
-function downLoadImg(src, dir, filename) {
-	return new Promise((resolve,reject)=>{
-		let savePath = dir+filename.replace('*','')
-		request.head(src, (err, res, body)=>{
-			if(err){
-				reject(err)
-			} else {
-				console.log('开始下载图片'+filename)
-				request(src).pipe(fs.createWriteStream(path.resolve(savePath))).on('close',()=>{
-					console.log((filename+' 下载完成').green)
-					resolve()
-				})
+function readFileTodown(filePath) {
+	method.readFilePromise(filePath)
+		.then(imgsCollection=>{
+			imgsCollection = JSON.parse(imgsCollection)
+			let imgsLen = imgsCollection.length
+			console.log(`一共有 ${imgsLen} 张图片`)
+			for(let i=2000; i<4000;i++){
+				downImgToLocal(imgsCollection[i].src, imgsCollection[i].filename, ImgRootPath)
+					.then(name=>{
+						console.log(('已下载 ' + name).green)
+					})
+					.catch(err=>{
+						console.error((`${imgsCollection[i].filename} 下载失败`).red)
+						console.error(err)
+					})
 			}
-			
+			//return Promise.all(downImgsProcess)
 		})
+		.catch(err=>{
+			console.error(err)
+		})
+}
+function downImgToLocal(src,filename, dir) {
+	return new Promise((resolve,reject)=>{
+		let savePath = ImgRootPath+filename.replace('*','')
+		if(fs.existsSync(savePath)){
+			console.log(filename+' is exist')
+			return;
+		} else {
+			request.head(src, (err, res, body)=>{
+				if(err){
+					console.log(('request occur error'+src).red)
+					reject(err)
+				} else {
+					console.log('开始下载图片 '+filename)
+					request(src).pipe(fs.createWriteStream(path.resolve(savePath)),{autoClose:true}).on('close',()=>{
+						resolve(filename)
+					})
+				}
+				
+			})
+		}
 	})
 	
 }
